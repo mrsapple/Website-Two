@@ -6,9 +6,11 @@
   font-family: 'Poppins',sans-serif;
 }
 nav{
+    position: fixed;
     background: #1b1b1b;
     width: 100%;
     padding: 10px 0px;
+    z-index: 1;
 }
 nav .menu{
     max-width: 1250px;
@@ -34,4 +36,77 @@ nav .menu{
 .menu ul li a{
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 15px 0 15px 0;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+.menu ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+.img{
+    background: url(img3.jpg)no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.center{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.center .title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+.center .sub-title{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+}
+.center .btns{
+    margin-top: 20px;
+}
+.center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 15px 0 15px 0;
+    border: none;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+    color: #fff;
+    background: none;
+}
+.center .btns button:first-child:hover{
+    color: #000;
+    background: #fff;
+}
+.center .btns button:nth-child(2):hover{
+    color: #fff;
+    background: none;
 }
